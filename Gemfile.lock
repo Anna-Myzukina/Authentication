@@ -39,6 +39,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
+    bcrypt (3.1.12)
     bindex (0.8.1)
     builder (3.2.3)
     byebug (9.0.6)
@@ -82,7 +83,6 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
-    pg (0.20.0)
     puma (3.9.1)
     rack (2.0.7)
     rack-test (1.1.0)
@@ -162,12 +162,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (= 3.1.12)
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
   jbuilder (= 2.7.0)
   jquery-rails (= 4.3.1)
   listen (= 3.1.5)
-  pg (= 0.20.0)
   puma (= 3.9.1)
   rails (= 5.1.6)
   sass-rails (= 5.0.6)
