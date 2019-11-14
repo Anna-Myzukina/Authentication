@@ -1,2 +1,20 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<%= form_for @user do |f| %>
+<ul>
+  <% @user.errors.full_messages.each do |error| %>
+  <li><%= error %></li>
+  <% end %>
+</ul>
+<p>
+  <%= f.label :name %> <br/>
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :email %> <br/>
+  <%= f.email_field :email, :value => "example@email.com" %>
+</p>
+<p>
+  <%= f.label :password %> <br/>
+  <%= f.password_field :password %>
+</p>
+<p><%= f.submit %></p>
+<% end %>
