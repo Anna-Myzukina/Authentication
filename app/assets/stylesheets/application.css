@@ -13,8 +13,3 @@
  *= require_tree .
  *= require_self
  */
-.sign_btn{
-  margin: auto;
-  color: brown;
-  background: #000;
-}

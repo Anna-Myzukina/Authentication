@@ -1,3 +1,4 @@
+<div class="main_form text-center">
 <%= form_for @user do |f| %>
 <ul>
   <% @user.errors.full_messages.each do |error| %>
@@ -18,3 +19,4 @@
 </p>
 <%= f.submit "create my account", class:"sign_btn btn btn-primary" %>
 <% end %>
+</div>
