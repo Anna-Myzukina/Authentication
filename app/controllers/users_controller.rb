@@ -15,13 +15,14 @@ class UsersController < ApplicationController
   end
 
   def create
-    flash.now[:success] = "Welcome to The Clubhouse App!"
-   @user = User.new(user_params)
-      if @user.save
-        redirect_to @user
-      else
-        render :new
-      end
+    @user = User.new(user_params)
+    if @user.save
+      log_in @user
+      flash[:success] = "Welcome to the Clubhouse App!"
+      redirect_to @user
+    else
+      render 'new'
+    end
   end
 
   def update
