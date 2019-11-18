@@ -9,6 +9,25 @@ body{
     ),
     url(https://wowxwow.com/wp-content/uploads/2019/09/Robert-Steven-Connett-MICROVERSE-II.jpg);
 }
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 form{
     background: rgba(39, 183, 208, 0.8);
     border: 2px solid blue;
@@ -28,6 +47,20 @@ input:focus{
 .sign_btn{
   color: brown;
   background: #000;
+}
+/* checkbox */
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }
 /* sidebar */
 
