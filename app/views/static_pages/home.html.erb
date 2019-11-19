@@ -12,5 +12,30 @@
 </a>
       From Wikipedia, the free encyclopedia
     </p>
+
+    <div class="float-right">
+  <% if logged_in? %>
+  <%= link_to "(#{current_user.name}) Log out", log_out_path, method: "delete" %>
+  <% else %>
+    <%= link_to 'Log in', login_path %>
+  <% end %>
+</div>
+
+<h1>Members Only Posts</h1>
+
+<% @posts.each do |post| %>
+  <% if logged_in? %>
+    <p class="float-right">
+      Posted by:
+      <%= post.user.name %>
+    </p>
+  <% end %>
+  <h4 class="float-left"><%=post.title %></h4>  
+  <p class="clear"><%= post.body %></p>
+<% end %>
+
+<% if logged_in? %>
+  <%= link_to "Create a Post", new_post_path %>
+<% end %>
   </body>
 </html>

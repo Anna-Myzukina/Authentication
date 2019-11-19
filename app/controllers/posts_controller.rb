@@ -16,10 +16,22 @@ class PostsController < ApplicationController
       @post = Post.new
   end
     
-  def create
-    @post = Post.new(post_params)
-    @post.user_id = current_user.id
-    @post.save
-    redirect_to root_path
-  end
+  def create 
+      @micropost = current_user.microposts.build(micropost_params) 
+        if @micropost.save 
+          flash[:success] = "Micropost created!" 
+          redirect_to root_url 
+        else 
+          render 'static_pages/home' 
+        end 
+  end 
+
+  def destroy 
+  end 
+  
+  private 
+  def micropost_params 
+    params.require(:micropost).permit(:content) 
+  end 
+
 end
