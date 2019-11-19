@@ -36,18 +36,26 @@ form{
     margin-right: 33%;
     padding: 50px;
 }
+/*
 input{
   border-radius: 7px;
   background-color: #d5d4e3;
 }
+*/
 input:focus{
-  width: 300px;
-  background: red;
+  width: 250px;
+  background: rgb(203, 140, 216);
 }
-.sign_btn{
-  color: brown;
-  background: #000;
+.sign_btn,
+.login_btn{
+  color: rgb(186, 169, 194);
+  background: rgb(90, 5, 116);
+  text-transform: uppercase;
 }
+.login_btn{
+  margin-top: 25px;
+}
+
 /* checkbox */
 .checkbox {
   margin-top: -10px;
