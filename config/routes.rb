@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  root 'static_pages#home'
 
   get 'static_pages/logIn'
 
-  get 'sessions/new'
+  get 'users/new'
 
   resources :users
-  root   'users#index'
+  get   '/home',     to: 'users#index'
   get    '/signup',  to: 'users#new'
   post   '/signup',  to: 'users#create'
   get    '/login',   to: 'sessions#new'
