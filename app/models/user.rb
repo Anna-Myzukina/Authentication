@@ -20,15 +20,16 @@ class << self
   end
 
   # Returns a random token.
-  def new_token
-    SecureRandom.urlsafe_base64
-  end
+  
 end
-  # Remembers a user in the database for use in persistent sessions.
-  def remember
-    self.remember_token = User.new_token
-    update_attribute(:remember_digest, User.digest(remember_token))
-  end
+  
+  def self.new_remember_token
+  SecureRandom.urlsafe_base64
+  end 
+
+  def create_remember_token
+  self.remember_token = User.digest(User.new_remember_token)
+  end 
 
   # Returns true if the given token matches the digest.
   def authenticated?(remember_token)

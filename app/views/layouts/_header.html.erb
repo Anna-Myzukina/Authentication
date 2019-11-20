@@ -1,10 +1,10 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "clubhouse", '#', id: "logo" %>
+    <%= link_to "clubhouse", '/', id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
       <li><%= link_to "Sign up", 'users/new' %></li>
-        <li><%= link_to "Log in", 'static_pages/logIn' %></li>
+        <li><%= link_to "Log in", login_path %></li>
       </ul>
     </nav>
   </div>
