@@ -16,14 +16,7 @@
       From Wikipedia, the free encyclopedia
     </p>
 
-    <div class="float-right">
-  <% if logged_in? %>
-  <%= link_to "(#{current_user.name}) Log out", logout_path, method: "delete" %>
-  <% else %>
-    <%= link_to 'Log in', login_path, class: "btn btn-lg btn-primary"
-    %>
-  <% end %>
-</div>
+    
 
 
   </body>

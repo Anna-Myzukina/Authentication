@@ -12,8 +12,11 @@ body{
 }
 
 /* header */
-
+.font_lobster{
+  font-family: 'Lobster', cursive;
+}
 #logo {
+  font-family: 'Lobster', cursive;
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -101,6 +104,7 @@ aside {
 
 .gravatar {
   float: left;
+  margin-top: 30px;
   margin-right: 10px;
 }
 
