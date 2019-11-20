@@ -2,11 +2,12 @@
 
 ![ ](https://github.com/Anna-Myzukina/Authentication/blob/create-readme/app/assets/images/club.png)
 
-## Description:
+## Description
+===============================================
 
     In this project, you’ll be building an exclusive clubhouse where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
-    
-## Environment:
+
+## Environment
 - [ ] Ruby on Rails version 5.1.6
 - [ ] bcrypt version 3.1.12 ([bcrypt()](https://github.com/codahale/bcrypt-ruby) allows you to easily harden your application against these kinds of attacks.)
 - [ ] ([bootstrap-sass](https://www.rubydoc.info/gems/bootstrap-sass/3.3.6) is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications version 3.3.7
