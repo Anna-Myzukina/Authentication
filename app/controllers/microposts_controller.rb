@@ -1,6 +1,9 @@
 class MicropostsController < ApplicationController
-  before_action :logged_in_user, only: [:create, :new]
-
+  before_action :valid_user, only: [:create, :new]
+  def new
+    @micropost = Micropost.new
+  end
+  
   def create
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
@@ -14,14 +17,12 @@ class MicropostsController < ApplicationController
   def destroy
   end
 
-  def new
-    @micropost = Micropost.new
-  end
+  
 
 
   private
 
-  def logged_in_user
+  def valid_user
     if !logged_in? 
       flash[:warning] = "You must be logged in to do that." 
       redirect_to root_url 

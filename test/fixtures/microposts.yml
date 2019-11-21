@@ -1,26 +1,24 @@
-orange:
+steve:
+  title: Eating At Work
   content: "I just ate an orange!"
   created_at: <%= 10.minutes.ago %>
-  user: michael
+  user: steve
 
-tau_manifesto:
+bob:
+  title: Ah la la !!!
   content: "Check out the @tauday site by @mhartl: http://tauday.com"
   created_at: <%= 3.years.ago %>
-  user: michael
+  user: bob
 
-cat_video:
+joe:
+  title:  Work Shenannigans
   content: "Sad cats are sad: http://youtu.be/PKffm2uI4dk"
   created_at: <%= 2.hours.ago %>
-  user: michael
+  user: joe
 
-most_recent:
+george:
+  title: Somebody , save me !!!
   content: "Writing a short test"
   created_at: <%= Time.zone.now %>
-  user: michael
+  user: george
 
-<% 30.times do |n| %>
-micropost_<%= n %>:
-  content: <%= Faker::Lorem.sentence(5) %>
-  created_at: <%= 42.days.ago %>
-  user: michael
-<% end %>
