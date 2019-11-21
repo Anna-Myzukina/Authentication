@@ -1,18 +1,7 @@
 <% provide(:title, "Home") %>
 <!DOCTYPE html>
 <html>
-<% if logged_in? %>
-  <div class="row">
-    <aside class="col-md-4">
-      <section class="user_info">
-        <%= render 'shared/user_info' %>
-      </section>
-      <section class="micropost_form">
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-  </div>
-<% else %>
+
 <div class="center jumbotron">
   <head>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -23,15 +12,14 @@
     <hr class="my-4">
     <p >
       This is the home page for the
-      <a href="https://en.wikipedia.org/wiki/Clubhouse/">Clubhouse
-</a>
+      <a href="https://en.wikipedia.org/wiki/Clubhouse/">Clubhouse</a>
       From Wikipedia, the free encyclopedia
     </p>
-
-    
-
-
   </body>
   </div>
-  <% end %>
+  
+  <div class="col-md-8">
+      <h3>Micropost Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
 </html>

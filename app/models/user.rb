@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  before_create :create_remember_token
   attr_accessor :remember_token
+  before_create :create_remember_token
   has_many :microposts, dependent: :destroy
   before_save { self.email = email.downcase }
   validates :name, presence: true, length: { maximum: 50 }
@@ -11,7 +11,6 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 } 
 
-class << self
   # Returns the hash digest of the given string.
   def digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
@@ -21,8 +20,14 @@ class << self
 
   # Returns a random token.
   
-end
+
   
+# Defines a proto-feed.
+  # See "Following users" for the full implementation.
+  def feed
+    Micropost.where("user_id = ?", id)
+  end
+
   def self.new_remember_token
   SecureRandom.urlsafe_base64
   end 

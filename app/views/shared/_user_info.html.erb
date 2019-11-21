@@ -1,4 +1,16 @@
-<%= link_to gravatar_for(current_user), current_user %>
-<h1><%= current_user.name %></h1>
-<span><%= link_to "view my profile", current_user %></span>
-<span><%= pluralize(current_user.microposts.count, "micropost") %></span>
+<div class="row">
+  <div class="main_form text-center">
+    <%= form_for(:session, url: login_path) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.submit "Sign in", class: "btn btn-primary login_btn" %>
+    <% end %>
+
+    <h3 class="p-3 mb-2 bg-success text-white">New user? <%= link_to "Sign up now!", signup_path, class:"btn btn-primary"%></h3>
+  </div>
+</div>
