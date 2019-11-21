@@ -8,12 +8,14 @@
       </h1>
     </section>
   </aside>
- <%= form_for(@micropost, url: micropost_path) do |f| %>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-
-    <%= f.label :content %>
-    <%= f.text_field :content %>
-
-    <%= f.submit :submit %>
-<% end %>
+ <% if logged_in? %>
+    <div class="row">
+      <aside class="center">
+        <section class="micropost_form">
+          <%= render 'shared/micropost_form' %>
+        </section>
+      </aside>
+      
+    </div>
+  <% end %>
+  </div>

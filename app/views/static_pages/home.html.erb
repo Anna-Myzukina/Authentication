@@ -1,15 +1,6 @@
 <% provide(:title, "Home") %>
 <!DOCTYPE html>
 <html>
-  <% if logged_in? %>
-    <div class="row">
-      <aside class="col-md-4">
-        <section class="micropost_form">
-          <%= render 'shared/micropost_form' %>
-        </section>
-      </aside>
-    </div>
-  <% else %>
   <div class="center jumbotron">
     <head>
       <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -25,4 +16,5 @@
       </p>
     </body>
   </div>
+  
 </html>

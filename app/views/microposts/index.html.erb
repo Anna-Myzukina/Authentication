@@ -1,0 +1,20 @@
+<%= provide(:title, "All Microposts") %> 
+<h1 class="title">All microposts</h1> 
+
+<ul>
+ <% @microposts.each do |microposts| %> 
+ <li> 
+ <article class="message is-dark"> 
+ <div class="message-header"> 
+ <p><%= microposts.title %>
+ </p> 
+ </div>
+  <div class="message-body"> 
+  <p><%= microposts.body %></p> 
+  <div class="author is-italic"> <% if logged_in? %> 
+  <% @user = User.find(microposts.user_id) %> 
+  <p>By: <%= @user.name %></p> <% end %> 
+  </div> </div> </article> <br> 
+  </li> <% end %>
+   </ul>
+   
