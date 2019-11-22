@@ -93,7 +93,8 @@ aside {
       line-height: 1;
     }
     h1 {
-      font-size: 1.4em;
+      font-size: 70px;
+      color: white;
       text-align: left;
       letter-spacing: -1px;
       margin-bottom: 3px;
@@ -104,7 +105,7 @@ aside {
 
 .gravatar {
   float: left;
-  margin-top: 30px;
+  margin-top: 90px;
   margin-right: 10px;
 }
 
@@ -153,11 +154,7 @@ aside {
     display: block;
     margin-left: 60px;
   }
-  .gravatar {
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
-  }
+
 }
 
 aside {
