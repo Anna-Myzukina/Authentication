@@ -129,7 +129,14 @@ aside {
 }
 
 /* microposts */
+.title{
+  margin-top: 100px;
+  color: #e8e8e8;
+}
 
+.message{
+  color: #e8e8e8;
+}
 .microposts {
   list-style: none;
   padding: 0;

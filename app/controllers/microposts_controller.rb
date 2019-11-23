@@ -3,19 +3,19 @@ class MicropostsController < ApplicationController
   def new
     @micropost = Micropost.new
   end
-
-  def index
-    @microposts = Micropost.all
-  end
   
   def create
     @micropost = current_user.microposts.build(micropost_params)
+   
     if @micropost.save
       flash[:success] = "Micropost created!"
-      redirect_to root_url
+      redirect_to root_path
     else
-      render 'static_pages/home'
+      render :new
     end
+  end
+  def index
+    @microposts = Micropost.all
   end
 
   def destroy
@@ -30,6 +30,6 @@ class MicropostsController < ApplicationController
   end
 
     def micropost_params
-      params.require(:micropost).permit(:content)
+      params.require(:micropost).permit(:title, :content)
     end
 end

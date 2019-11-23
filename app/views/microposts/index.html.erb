@@ -1,20 +1,40 @@
 <%= provide(:title, "All Microposts") %> 
+
+  <div class="center jumbotron">
+    <head>
+      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+      <title><%= yield(:title) %> | Clubhouse Sample App</title>
+    </head>
+    <body>
+      <h1 class="text-center">Wellcome</h1>
+      <hr class="my-4">
+      <p >
+        This is the home page for the
+        <a href="https://en.wikipedia.org/wiki/Clubhouse/">Clubhouse</a>
+        From Wikipedia, the free encyclopedia
+      </p>
+    </body>
+  </div>
 <h1 class="title">All microposts</h1> 
 
 <ul>
  <% @microposts.each do |micropost| %> 
  <li> 
  <article class="message is-dark"> 
- <div class="message-header"> 
- <p><%= micropost.title %>
- </p> 
- </div>
-  <div class="message-body"> 
-  <p><%= micropost.content %></p> 
-  <div class="author is-italic"> <% if logged_in? %> 
+ <div class="message-header"><p><%= micropost.title %></p> </div>
+  <div class="message-body"> <p><%= micropost.content %></p> 
+  <div class="author is-italic"> 
+  	<% if logged_in? %> 
   <% @user = User.find(micropost.user_id) %> 
-  <p>By: <%= @user.name %></p> <% end %> 
-  </div> </div> </article> <br> 
-  </li> <% end %>
+  <p>By: <%= @user.name %></p>
+   <% end %> 
+  </div> 
+  </div>
+   </article>
+    <br> 
+  </li> 
+  <% end %>
+  <% if logged_in? %>
+  <%= link_to "Create a Post", new_post_path %>
+<% end %>
    </ul>
-   
