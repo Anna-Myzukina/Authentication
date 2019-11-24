@@ -15,6 +15,7 @@ class MicropostsController < ApplicationController
     end
   end
   def index
+    @micropost = Micropost.new
     @microposts = Micropost.all
   end
 
