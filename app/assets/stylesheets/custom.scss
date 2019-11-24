@@ -32,6 +32,10 @@ body{
   text-decoration: none;
 }
 
+.nav:before, .nav:after {
+  padding-top: 15px;
+}
+
 form{
     background: rgba(39, 183, 208, 0.8);
     border: 2px solid blue;
