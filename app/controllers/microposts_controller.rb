@@ -14,6 +14,7 @@ class MicropostsController < ApplicationController
       render :new
     end
   end
+  
   def index
     @micropost = Micropost.new
     @microposts = Micropost.all

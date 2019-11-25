@@ -2,9 +2,12 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   def index
     @user = User.all
+ 
   end
 
   def show
+    @microposts = Micropost.new
+    @microposts = Micropost.all
     @user = User.find(params[:id])
     @micropost = current_user.microposts.build if logged_in?
   end
@@ -37,5 +40,8 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
+    end
+    def micropost_params
+      params.require(:micropost).permit(:title, :content)
     end
 end

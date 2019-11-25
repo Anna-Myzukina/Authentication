@@ -15,18 +15,9 @@
       </p>
     </body>
   </div>
-<h1 class="title">All microposts</h1> 
+<h1 class="title text-center">All microposts</h1> 
 
-<% if logged_in? %>
-  <%= link_to "Create a Post", new_micropost_path %>
-<% end %>
-<%= form_for(@micropost) do |f| %>
-<div class="field">
-    <%= f.text_area :title, placeholder: "Compose new micropost..." %>
-  </div>
-  
-  <%= f.submit "Post", class: "btn btn-primary" %>
-<% end %>
+
 
 <ul>
  <% @microposts.each do |micropost| %> 
