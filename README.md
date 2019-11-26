@@ -2,6 +2,8 @@
 
 ![ ](https://github.com/Anna-Myzukina/Authentication/blob/create-readme/app/assets/images/club.png)
 
+## Live version of project : [CLUBHOUSE](https://evening-sierra-99152.herokuapp.com/)
+
 ## Description
 
     In this project, you’ll be building an exclusive clubhouse where your members can write 
