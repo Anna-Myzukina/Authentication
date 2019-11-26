@@ -1,4 +1,4 @@
-## PROJECT: AUTHENTICATION  Live version of project : [CLUBHOUSE](https://evening-sierra-99152.herokuapp.com/)
+## PROJECT: AUTHENTICATION || Live version of project : [CLUBHOUSE](https://evening-sierra-99152.herokuapp.com/)
 
 ![ ](https://github.com/Anna-Myzukina/Authentication/blob/create-readme/app/assets/images/club.png)
 
