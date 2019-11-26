@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'bcrypt', '3.1.12'
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '3.4.1'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'coffee-rails', '4.2.2'
 gem 'faker', '1.7.3'
