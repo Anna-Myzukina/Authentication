@@ -1,7 +1,14 @@
+<head>
+      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+      <title><%= yield(:title) %> | Clubhouse Sample App</title>
+    </head>
+
 <%= form_for(@micropost) do |f| %>
-<div class="field">
-    <%= f.text_area :title, placeholder: "Compose new micropost..." %>
+<div class="field font_lobster">
+    <%= f.text_area :title, placeholder: "Title of your post..." %>
   </div>
-  
+  <div class="field font_lobster">
+    <%= f.text_area :content, placeholder: "Write here your post..." %>
+  </div>
   <%= f.submit "Post", class: "btn btn-primary" %>
 <% end %>

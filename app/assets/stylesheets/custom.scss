@@ -12,6 +12,9 @@ body{
 }
 
 /* header */
+.font-size-25{
+  font-size: 25px;
+}
 .font_lobster{
   font-family: 'Lobster', cursive;
 }
@@ -45,10 +48,7 @@ form{
     padding: 50px;
 }
 /*
-input{
-  border-radius: 7px;
-  background-color: #d5d4e3;
-}
+
 */
 input:focus{
   width: 250px;
@@ -107,9 +107,12 @@ aside {
   }
 }
 
+.margin-top{
+  margin-top: 120px !important;
+}
+
 .gravatar {
   float: left;
-  margin-top: 90px;
   margin-right: 10px;
 }
 

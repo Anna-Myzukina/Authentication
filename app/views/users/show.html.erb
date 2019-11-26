@@ -1,8 +1,11 @@
 <% provide(:title, @user.name) %>
+<head>
+      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    </head>
 <div class="row">
   <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
+    <section class="user_info margin-top">
+      <h1 class="font_lobster">
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
@@ -13,23 +16,23 @@
   <%= link_to "Create a Post", new_micropost_path %>
 <% end %>
 <%= form_for(@micropost) do |f| %>
-<div class="field">
+<div class="field font_lobster">
     <%= f.text_area :title, placeholder: "Title of your post..." %>
   </div>
-  <div class="field">
+  <div class="field font_lobster">
     <%= f.text_area :content, placeholder: "Write here your post..." %>
   </div>
   <%= f.submit "Post", class: "btn btn-primary" %>
 <% end %>
 
-  <h1 class="title text-center">All microposts</h1> 
+  <h1 class="title text-center font_lobster">All microposts</h1> 
 
 
 
 <ul>
  <% @microposts.each do |micropost| %> 
  <li> 
- <article class="message is-dark"> 
+ <article class="message is-dark font_lobster"> 
  <div class="message-header"><p><%= micropost.title %></p> </div>
   <div class="message-body"> <p><%= micropost.content %></p> 
   <div class="author is-italic"> 

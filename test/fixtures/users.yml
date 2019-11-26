@@ -1,7 +1,7 @@
-steve:
+michael:
   id: 1
-  name: Steve
-  email: steve@example.com
+  name: michael
+  email: michael@example.com
   password_digest: <%= User.digest('foobar') %>
   member: true
 

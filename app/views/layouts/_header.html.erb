@@ -5,7 +5,7 @@
       <ul class="nav navbar-nav navbar-right">
       	  <% if logged_in? %>
              <%= link_to 'new post', new_micropost_path %>
-  <%= link_to "(#{current_user.name}) Sign out", logout_path, method: "delete" %>
+  <%= link_to "(#{current_user.name}) Log out", logout_path, method: "delete" %>
   <% else %>
     <%= link_to 'Sign in', login_path, class:"sign" %>
     <%= link_to 'Sign up', signup_path, class:"sign" %>
