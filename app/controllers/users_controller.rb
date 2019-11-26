@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+  before_action :logged_in_user, only: %i[index edit update destroy]
   def index
     @user = User.all
   end
@@ -15,8 +17,7 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @user = User.new(user_params)
@@ -28,19 +29,18 @@ class UsersController < ApplicationController
     end
   end
 
-  def update
+  def update; end
+
+  def destroy; end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:name, :email, :password,
+                                 :password_confirmation)
   end
 
-  def destroy
+  def micropost_params
+    params.require(:micropost).permit(:title, :content)
   end
-  
-   private
-
-    def user_params
-      params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
-    end
-    def micropost_params
-      params.require(:micropost).permit(:title, :content)
-    end
 end

@@ -1,5 +1,6 @@
-module SessionsHelper
+# frozen_string_literal: true
 
+module SessionsHelper
   def sign_in(user)
     remember_token = User.new_remember_token
     cookies.permanent[:remember_token] = remember_token
@@ -26,5 +27,4 @@ module SessionsHelper
     cookies.delete(:remember_token)
     self.current_user = nil
   end
-
 end
