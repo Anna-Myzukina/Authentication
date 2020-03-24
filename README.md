@@ -20,7 +20,7 @@
 ## Skills 
 - [ ] Ruby on Rails
 - [ ] Bootstrap 4
-- [ ] SQL
+- [ ] sqlite3
 
 ## Features
 - [ ] A user can register for an account
