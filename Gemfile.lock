@@ -90,7 +90,7 @@ GEM
     minitest (5.13.0)
     multi_json (1.14.1)
     nio4r (2.5.2)
-    nokogiri (1.10.5)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     pg (0.20.0)
     puma (3.9.1)
