@@ -17,6 +17,18 @@
 - [ ] ([bootstrap-sass](https://www.rubydoc.info/gems/bootstrap-sass/3.3.6) is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications version 3.3.7
 - [ ] Puma: A Ruby Web Server Built For Concurrency version '3.9.1'
 
+## Skills 
+- [ ] Ruby on Rails
+- [ ] Bootstrap 4
+- [ ] SQL
+
+## Features
+- [ ] A user can register for an account
+- [ ] A user can login and logout
+- [ ] A user can change their details
+- [ ] Bootstrap source in vendor/assets
+- [ ] Font awesome CSS source
+
 ## Getting started
 
 To get started with the app, clone the repo and then install the needed gems:
