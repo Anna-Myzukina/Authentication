@@ -29,6 +29,11 @@
 - [ ] Bootstrap source in vendor/assets
 - [ ] Font awesome CSS source
 
+## Future features
+- [ ] Users can upload profile photos.
+- [ ] Users can create posts with images.
+- [ ] Users can add comments with icons.
+
 ## Getting started
 
 To get started with the app, clone the repo and then install the needed gems:
