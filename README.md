@@ -1,13 +1,13 @@
-## PROJECT: AUTHENTICATION || Live version of project : [CLUBHOUSE](https://evening-sierra-99152.herokuapp.com/)
+## PROJECT: AUTHENTICATION || Live version of the project: [CLUBHOUSE](https://evening-sierra-99152.herokuapp.com/)
 
 ![ ](https://github.com/Anna-Myzukina/Authentication/blob/create-readme/app/assets/images/club.png)
 
-## Live version of project : [CLUBHOUSE](https://evening-sierra-99152.herokuapp.com/)
+## A live version of the project: [CLUBHOUSE](https://evening-sierra-99152.herokuapp.com/)
 
 ## Description
 
-    In this project, you’ll be building an exclusive clubhouse where your members can write 
-    embarrassing posts about non-members. Inside the clubhouse, members can see who the author 
+    In this project, you’ll be building an exclusive clubhouse where your members can 
+    write embarrassing about non-members. Inside the clubhouse, members can see who the author 
     of a post is but, outside, they can only see the story and wonder who wrote it.
 
 ## Environment
@@ -24,7 +24,7 @@
 
 ## Features
 - [ ] A user can register for an account
-- [ ] A user can login and logout
+- [ ] A user can log in and logout
 - [ ] A user can change their details
 - [ ] Bootstrap source in vendor/assets
 - [ ] Font awesome CSS source
@@ -36,7 +36,7 @@
 
 ## Getting started
 
-To get started with the app, clone the repo and then install the needed gems:
+To get started with the app, clone the repo, and then install the needed gems:
 
 ```
 $ bundle install --without production
