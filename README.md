@@ -75,7 +75,7 @@ $ rails server
 
 👤 **Author1**
 
-- Github: [Maya](https://github.com/maya88en)
+* Github: [Emogene Akwiri](https://github.com/Elukoye)
 
 👤 **Author2**
 
