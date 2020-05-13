@@ -70,7 +70,16 @@ $ rails server
 
 - [ ] See [LICENSE.md](LICENSE.md) for details.
 
+
 ## Authors
 
-- [ ] [Muzykina Anna](https://github.com/Anna-Myzukina)
-- [ ] [Elukoye](https://github.com/Elukoye)
+👤 **Author1**
+
+- Github: [Maya](https://github.com/maya88en)
+
+👤 **Author2**
+
+- Github: [@Anna-Myzukina](https://github.com/githubhandle)
+- Twitter: [@AnnaMuzykina](https://twitter.com/twitterhandle)
+- Linkedin: [Anna Muzykina](https://linkedin.com/linkedinhandle)
+- email: anna.muzykina83@gmail.com
